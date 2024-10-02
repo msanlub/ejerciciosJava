@@ -13,13 +13,13 @@ public class ejercicio13 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Introduce la nota del primer examen: ");
-        double primeraNota = scanner.nextDouble();
+        float primeraNota = scanner.nextFloat();
         System.out.println("¿Qué nota quieres sacar en el trimestre? ");
-        double notaDeseada = scanner.nextDouble();
+        float notaDeseada = scanner.nextFloat();
 
         double segundaNota = calculadora.segundaNota(primeraNota, notaDeseada);
 
-        System.out.printf("Para tener un %.2f en el trimestre necesitas sacar un %.2f en el segundo examen.%n", notaDeseada, primeraNota);
+        System.out.printf("Para tener un %.2f en el trimestre necesitas sacar un %.2f en el segundo examen.%n", notaDeseada, segundaNota);
 
         scanner.close();
     }
