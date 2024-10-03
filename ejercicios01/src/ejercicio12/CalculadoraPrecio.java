@@ -2,14 +2,14 @@ package ejercicio12;
 
 public class CalculadoraPrecio {
 
-    final double IVAGENERAL = 1.21;
-    final double IVAREDUCIDO = 1.1;
-    final double IVASUPERREDUCIDO = 1.04;
+    static final double IVAGENERAL = 1.21;
+    static final double IVAREDUCIDO = 1.1;
+    static final double IVASUPERREDUCIDO = 1.04;
 
-    final double MENO5 = 5;
-    final double CINCOPORC = 0.05;
+    static final double MENO5 = 5;
+    static final double CINCOPORC = 0.05;
 
-    public double calcularIVA(String tipoIva, double precio) {
+    public static double calcularIVA(String tipoIva, double precio) {
         switch (tipoIva){
             case "general" :
                 return IVAGENERAL * precio;
